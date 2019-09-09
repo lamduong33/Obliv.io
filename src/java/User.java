@@ -16,9 +16,40 @@ public class User
 	}
 
 	@Override
-	public User(String email, int userID)
+	public User(String t_email, int t_userID)
 	{
-		this.eMail = eMail;
-		this.userName = userID;
+		this.eMail = t_eMail;
+		this.userID = t_userID;
+		this.userName = null;
+	}
+
+	public String getUserName()
+	{
+		return this.userName;
+	}
+	
+	public int getUserID()
+	{
+		return this.userID;
+	}
+
+	public String getEmail()
+	{
+		return this.eMail;
+	}
+
+	public void setUserName(String t_userName)
+	{
+		this.userName = t_userName;
+	}
+
+	public void setUserID(int t_userID)
+	{
+		this.userID = t_userID;
+	}
+
+	public void setEmail(String t_eMail)
+	{
+		this.eMail = t_eMail;
 	}
 }
